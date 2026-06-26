@@ -4,6 +4,7 @@ button.addEventListener('click',function(e){
     const taskText = document.getElementById('action').value;
     const newLi = document.createElement('li');
     newLi.textContent = taskText;
-    taskList.appendChild(newLi); 
-    const taskList=document.getElementById('taskList').appendChild('newLi');
+    
+    const taskList=document.getElementById('taskList');
+   taskList.appendChild(newLi); 
 }); 
