@@ -30,6 +30,34 @@
     <ul id="taskList">
 
     </ul>
+    <main>
+      <form method="POST" action="">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name (required):</label>
+          <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
+
+          <label for="email">Email address (required):</label>
+          <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Age (optional):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
+        <fieldset>
+          <legend>Was this your first time at our Website?</legend>
+          <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
+          <label for="yes-option">Yes</label>
+          <input id="no-option" type="radio" name="hotel-stay"  value="no">
+          <label for="no-option">No</label>
+        </fieldset>
+      </form>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
